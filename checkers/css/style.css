@@ -1,0 +1,170 @@
+body {
+	background-color: #666363;
+
+}
+
+.wrapper {
+	position:absolute;
+	top: 50px; right: 0; bottom: 0; left: 0;
+	margin:  auto;
+	width: 90%;
+}
+
+.checkers-position {
+	position: absolute;
+	top: 0; bottom: 0;
+	margin: auto 0;
+	width: 44vw;
+	height: 44vw;
+	padding: 1%;
+	background-color: #333333;
+}
+
+.checkers-position {
+	left: 0;
+}
+
+
+.checkers-position .border {
+	position: relative;
+}
+
+.checkers-position .border:before {
+	content: '';
+	padding-bottom: 100%;
+	display: block;
+}
+
+.checkers-position .cell {
+	width: 12.5%;
+	background-color: #000000;
+}
+
+.checkers-position .cell {
+	position: absolute;
+}
+
+
+.cell:before,
+.cell:before {
+	content: '';
+	padding-bottom: 100%;
+	display: block;
+}
+
+.cell:after {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	content: '';
+	display: block;
+	background-color: transparent;
+	padding-bottom: 80%;
+	border-radius: 50px;
+	width: 80%;
+}
+
+
+.checkers-position .cell:nth-child(-n+8):nth-child(odd):after,
+.checkers-position .cell:nth-child(n+9):nth-child(-n+16):nth-child(even):after,
+.checkers-position .cell:nth-child(n+17):nth-child(-n+24):nth-child(odd):after {
+	background-color: #003280;
+}
+
+.checkers-position .cell:nth-child(n+41):nth-child(-n+48):nth-child(even):after,
+.checkers-position .cell:nth-child(n+49):nth-child(-n+56):nth-child(odd):after,
+.checkers-position .cell:nth-child(n+57):nth-child(-n+64):nth-child(even):after {
+	background-color: red;
+}
+
+.cell:hover:after {
+	top: 5px;
+	-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+ 			transform: scale(1.05);
+}
+
+.cell:nth-child(-n+8):nth-child(odd):hover:after,
+.cell:nth-child(n+9):nth-child(-n+16):nth-child(even):hover:after,
+.cell:nth-child(n+17):nth-child(-n+24):nth-child(odd):hover:after,
+.cell:nth-child(n+41):nth-child(-n+48):nth-child(even):hover:after,
+.cell:nth-child(n+49):nth-child(-n+56):nth-child(odd):hover:after,
+.cell:nth-child(n+57):nth-child(-n+64):nth-child(even):hover:after {
+	box-shadow: 0px 4px 10px 0px #333;
+}
+
+.cell:nth-child(-n+8):nth-child(even),
+.cell:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.cell:nth-child(n+17):nth-child(-n+24):nth-child(even),
+.cell:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.cell:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.cell:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.cell:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.cell:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
+	background-color: #fff;
+}
+
+.checkers-position .cell:nth-child(8n+1) {
+	left: 0;
+}
+
+.checkers-position .cell:nth-child(8n+2) {
+	left: 12.5%;
+}
+
+.checkers-position .cell:nth-child(8n+3) {
+	left: 25%;
+}
+
+.checkers-position .cell:nth-child(8n+4) {
+	left: 37.5%;
+}
+
+.checkers-position .cell:nth-child(8n+5) {
+	left: 50%;
+}
+
+.checkers-position .cell:nth-child(8n+6) {
+	left: 62.5%;
+}
+
+.checkers-position .cell:nth-child(8n+7) {
+	left: 75%;
+}
+
+.checkers-position .cell:nth-child(8n+8) {
+	left: 87.5%;
+}
+
+.checkers-position .cell:nth-child(-n+8) {
+	top: 0;
+}
+
+.checkers-position .cell:nth-child(n+9):nth-child(-n+16) {
+	top: 12.5%;
+}
+
+.checkers-position .cell:nth-child(n+17):nth-child(-n+24) {
+	top: 25%;
+}
+
+.checkers-position .cell:nth-child(n+25):nth-child(-n+32) {
+	top: 37.5%;
+}
+
+.checkers-position .cell:nth-child(n+33):nth-child(-n+40) {
+	top: 50%;
+}
+
+.checkers-position .cell:nth-child(n+41):nth-child(-n+48) {
+	top: 62.5%;
+}
+
+.checkers-position .cell:nth-child(n+49):nth-child(-n+56) {
+	top: 75%;
+}
+
+.checkers-position .cell:nth-child(n+57):nth-child(-n+64) {
+	top: 87.5%;
+}
+
